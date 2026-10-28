@@ -54,6 +54,7 @@ services:
       DB_USER: sa
       DB_PASSWORD: "Prueba.Tecnica.2026"
       API_KEY: "${API_KEY:-dev-key}"
+      PHP_CLI_SERVER_WORKERS: "8"
     ports:
       - "8000:8000"
     command: ["php", "-S", "0.0.0.0:8000", "-t", "web", "web/index.php"]
